@@ -1,4 +1,4 @@
-package basic;
+//package basic;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -19,7 +19,9 @@ public class DateDifferenceTest {
 		int totalDiff=0;
 		String currDir = System.getProperty("user.dir");
 		
-		Scanner sc = new Scanner(new FileReader(currDir+"/src/basic/DateInputForTestCase.txt"));
+//		Scanner sc = new Scanner(new FileReader(currDir+"/src/basic/DateInputForTestCase.txt"));// For using 
+//		IDE such as Eclipse other than just run from Command Line because the "src" is source package and is invisible to the System.
+		Scanner sc = new Scanner(new FileReader(currDir+"/DateInputForTestCase.txt"));
 		while(sc.hasNext()){
 			String str = sc.nextLine();
 			totalDiff = diff.totalDiff(str);

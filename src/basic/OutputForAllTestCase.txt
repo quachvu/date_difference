@@ -1,0 +1,188 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\vu>D:
+
+D:\>cd GitHub\date_difference\src\basic
+
+D:\GitHub\date_difference\src\basic>java DateDifference.java
+Error: Could not find or load main class DateDifference.java
+
+D:\GitHub\date_difference\src\basic>javac DateDifference.java
+
+D:\GitHub\date_difference\src\basic>java DateDifference
+currDir D:\GitHub\date_difference\src\basic
+original input: 28 02 2009 ,  05 03 2009
+input is: 28 2 2009 5 3 2009
+totalDays inlude only year 733407
+totalDays included month 733438
+totalDays included day 733466
+totalDays1 733466
+totalDays inlude only year 733407
+totalDays included month 733466
+totalDays included day 733471
+totalDays2 733471
+totalDays2 - totalDays1 = 5
+Total Difference: 5 day(s)
+=================End=========
+original input: 28 02 2008 , 28 03 2008
+input is: 28 2 2008 28 3 2008
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays1 733100
+totalDays inlude only year 733041
+totalDays included month 733101
+totalDays included day 733129
+totalDays2 733129
+totalDays2 - totalDays1 = 29
+Total Difference: 29 day(s)
+=================End=========
+original input: 30 03 2009, 30 03 2010
+input is: 30 3 2009 30 3 2010
+totalDays inlude only year 733407
+totalDays included month 733466
+totalDays included day 733496
+totalDays1 733496
+totalDays inlude only year 733772
+totalDays included month 733831
+totalDays included day 733861
+totalDays2 733861
+totalDays2 - totalDays1 = 365
+Total Difference: 365 day(s)
+=================End=========
+original input: 30 02 2009, 30 02 2010
+input is: 30 2 2009 30 2 2010
+totalDays inlude only year 733407
+totalDays included month 733438
+totalDays included day 733468
+totalDays1 733468
+totalDays inlude only year 733772
+totalDays included month 733803
+totalDays included day 733833
+totalDays2 733833
+totalDays2 - totalDays1 = 365
+Total Difference: 365 day(s)
+=================End=========
+original input: 28 02 2008, 28 02 2009
+input is: 28 2 2008 28 2 2009
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays1 733100
+totalDays inlude only year 733407
+totalDays included month 733438
+totalDays included day 733466
+totalDays2 733466
+totalDays2 - totalDays1 = 366
+Total Difference: 366 day(s)
+=================End=========
+original input: 28 02 2008, 28 02 2008
+input is: 28 2 2008 28 2 2008
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays1 733100
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays2 733100
+totalDays2 - totalDays1 = 0
+Total Difference: 0 day(s)
+=================End=========
+
+D:\GitHub\date_difference\src\basic>javac DateDifferenceTest.java
+
+D:\GitHub\date_difference\src\basic>java DateDifferenceTest
+input is: 28 2 2009 5 3 2009
+totalDays inlude only year 733407
+totalDays included month 733438
+totalDays included day 733466
+totalDays1 733466
+totalDays inlude only year 733407
+totalDays included month 733466
+totalDays included day 733471
+totalDays2 733471
+totalDays2 - totalDays1 = 5
+First test data
+Expected output = 5
+-->TestCase Pass For Test Data in DateInputForTestCase.txt file
+input is: 28 2 2008 28 2 2008
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays1 733100
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays2 733100
+totalDays2 - totalDays1 = 0
+Second test data
+Expected output = 0
+-->TestCase Pass For Test Data in DateInputForTestCase.txt file
+input is: 28 2 2008 28 3 2008
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays1 733100
+totalDays inlude only year 733041
+totalDays included month 733101
+totalDays included day 733129
+totalDays2 733129
+totalDays2 - totalDays1 = 29
+Third test data
+Expected output = 29
+-->TestCase Pass For Test Data in DateInputForTestCase.txt file
+
+D:\GitHub\date_difference\src\basic>javac DateDifferenceInRangeTest.java
+
+D:\GitHub\date_difference\src\basic>java DateDifferenceInRangeTest
+input is: 28 2 2009 28 2 2010
+totalDays inlude only year 733407
+totalDays included month 733438
+totalDays included day 733466
+totalDays1 733466
+totalDays inlude only year 733772
+totalDays included month 733803
+totalDays included day 733831
+totalDays2 733831
+totalDays2 - totalDays1 = 365
+First test data
+Expected output = 365
+-->TestCase Pass For First Test Data in DateInputForTestCase1.txt file
+
+
+Invalid Input Format! Year(s) input should between 1990 and 2010
+Second test data
+totalDiff -1
+Test(s) Fail! The 2 dates should be in range from 1990 to 2010
+Exception in thread "main" java.util.InputMismatchException
+        at DateDifferenceInRangeTest.main(DateDifferenceInRangeTest.java:36)
+
+D:\GitHub\date_difference\src\basic>javac DateDifferenceOrderTest.java
+
+D:\GitHub\date_difference\src\basic>java DateDifferenceOrderTest
+input is: 28 2 2008 29 2 2008
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733100
+totalDays1 733100
+totalDays inlude only year 733041
+totalDays included month 733072
+totalDays included day 733101
+totalDays2 733101
+totalDays2 - totalDays1 = 1
+First test data
+Expected output = 1
+-->TestCase Pass For the First Test Data in DateInputForTestCase2.txt file
+
+
+Invalid Input Format! Second Date must later than First Date!Please correct your
+ last input.
+Second test data
+totalDiff -2
+Test(s) Fail! The second date should be later than the first date!
+Exception in thread "main" java.util.InputMismatchException
+        at DateDifferenceOrderTest.main(DateDifferenceOrderTest.java:28)
+
+D:\GitHub\date_difference\src\basic>javac DateDifferenceTest.java

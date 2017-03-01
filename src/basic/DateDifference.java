@@ -1,4 +1,4 @@
-package basic;
+
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -18,8 +18,10 @@ public class DateDifference {
 	 */
 	public static void main(String args[]) throws IOException{
 		String currDir = System.getProperty("user.dir");
-//		System.out.println("currDir "+currDir);
-		Scanner sc = new Scanner(new FileReader(currDir+"/src/basic/DateInput.txt"));
+		System.out.println("currDir "+currDir);
+//		Scanner sc = new Scanner(new FileReader(currDir+"/src/basic/src/basic/DateInput.txt"));// For using 
+//		IDE such as Eclipse other than just run from Command Line because the "src" is source package and is invisible to the System.
+		Scanner sc = new Scanner(new FileReader(currDir+"/DateInput.txt"));
 		int  totalDiff = 0;
 		
 		/**
